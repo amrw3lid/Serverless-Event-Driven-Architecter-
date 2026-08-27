@@ -6,8 +6,7 @@ A fully automated, scalable serverless pipeline built on Amazon Web Services (AW
 
 ## 🏗️ Architecture Diagram
 
-```markdown
-![Serverless Architecture](Untitled%20Diagram.drawio.png)
+![Serverless Architecture](architecture.png)
 
 ---
 
@@ -32,12 +31,19 @@ A fully automated, scalable serverless pipeline built on Amazon Web Services (AW
 
 ---
 
-## 🧪 Troubleshooting & Hands-on Learning
+## 💻 Lambda Function Code
 
-During the deployment of this pipeline, I actively monitored **CloudWatch Logs** to diagnose and resolve a Python syntax error in the Lambda execution handler, ensuring robust error handling and reliable event triggers.
+```python
+import json
+import boto3
 
----
-
-## 👨‍💻 Author
-**Amr Walid**  
-*Cloud Computing / CloudOps Enthusiast*
+def lambda_handler(event, context):
+    print("Received event: " + json.dumps(event))
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    file_key = event['Records'][0]['s3']['object']['key']
+    print(f"Successfully processed file {file_key} from bucket {bucket}")
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('File processed successfully!')
+    }
