@@ -1,3 +1,4 @@
+
 # 🚀 Serverless Event-Driven Architecture on AWS
 
 A fully automated, scalable serverless pipeline built on Amazon Web Services (AWS) that processes uploaded files, stores metadata, and triggers real-time cloud notifications.
@@ -6,7 +7,7 @@ A fully automated, scalable serverless pipeline built on Amazon Web Services (AW
 
 ## 🏗️ Architecture Diagram
 
-![Serverless Architecture](architecture.png)
+<img width="1345" height="1267" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/dc7c6628-02b5-48d2-9d84-39227bc13c7a" />
 
 ---
 
