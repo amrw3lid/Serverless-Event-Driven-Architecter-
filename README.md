@@ -7,7 +7,7 @@ A fully automated, scalable serverless pipeline built on Amazon Web Services (AW
 ## 🏗️ Architecture Diagram
 
 ```markdown
-![Serverless Architecture](Untitled Diagram.drawio.png)
+![Serverless Architecture](Untitled%20Diagram.drawio.png)
 
 ---
 
