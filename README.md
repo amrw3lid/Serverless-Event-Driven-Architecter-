@@ -1,4 +1,4 @@
-# Serverless-Event-Driven-Architecter-
+```mermaid
 graph LR
     A([User / System]) -->|Uploads File| B[(Amazon S3)]
     B -->|Event Trigger| C[AWS Lambda]
